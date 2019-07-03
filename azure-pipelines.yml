@@ -21,6 +21,10 @@ steps:
   inputs:
     rootFolderOrFile: '$(build.sourcesDirectory)/build'
     includeRootFolder: false
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(build.sourcesDirectory)/web.config'
+    includeRootFolder: false
 - task: PublishBuildArtifacts@1
 
 
