@@ -21,10 +21,6 @@ steps:
   inputs:
     rootFolderOrFile: '$(build.sourcesDirectory)/build'
     includeRootFolder: false
-# - task: ArchiveFiles@2
-#   inputs:
-#     rootFolderOrFile: '$(build.sourcesDirectory)'
-#     includeRootFolder: false
 - task: PublishBuildArtifacts@1
 
 
