@@ -10,8 +10,21 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: Npm@1
+  inputs:
+    command: 'install'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'run build'
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
+    rootFolderOrFile: '$(build.sourcesDirectory)/build'
     includeRootFolder: false
+# - task: ArchiveFiles@2
+#   inputs:
+#     rootFolderOrFile: '$(build.sourcesDirectory)'
+#     includeRootFolder: false
 - task: PublishBuildArtifacts@1
+
+
