@@ -2,11 +2,7 @@
   "name": "webapp",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "/api/*": {
-      "target": "http://localhost:5471"
-    }
-  },
+  "proxy": "http://localhost:5471",
   "dependencies": {
     "react": "^16.8.6",
     "react-css-modules": "^4.7.7",

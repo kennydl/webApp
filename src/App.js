@@ -17,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          Hehehehe. This is my first Deploy Test Init
         </a>
       </header>
     </div>
