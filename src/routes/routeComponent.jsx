@@ -1,5 +1,5 @@
 import React from 'react';
-import store from '../index.js';
+import store from 'index.js';
 
 export default function routeComponent(WrappedComponent) {
   class RouteComponent extends React.Component {

@@ -1,11 +1,11 @@
-import './index.css';
+import 'index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from 'serviceWorker';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
-import configureStore from './util/configureStore';
-import * as RoutesModule from './routes/routes';
+import configureStore from 'util/configureStore';
+import * as RoutesModule from 'routes/routes';
 
 const history = createBrowserHistory();
 const initialState = window.initialReduxState; // Initial states from server

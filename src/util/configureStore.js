@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
-import reducers from '../store';
+import reducers from 'store';
 
 export default function configureStore(history, initialState) {
   // Build middleware. These are functions that can process the actions before they reach the store.

@@ -14,8 +14,8 @@ import {
 // import Header from '../components/pageLayout/header/header';
 import routeWrapper from './routeComponent';
 import { createGlobalStyle } from 'styled-components';
-import globalCss from '../util/globalStyle';
-import ReactStart from '../App';
+import globalCss from 'util/globalStyle';
+import ReactStart from 'App';
 
 const GlobalStyle = createGlobalStyle`
   ${globalCss}
